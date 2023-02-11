@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Answer;
+use App\Models\Question;
 
 class AnswerController extends Controller
 {
-    public function answer()
+    public function answer(Question $question)
     {
-        return view('posts/answer');
+        $answer = Answer::where('question_id' , '=' , $question->id)->get();
+        return view('posts/answer')->with(['answers' => $answer]);
     }
 }

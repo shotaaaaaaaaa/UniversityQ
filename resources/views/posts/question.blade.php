@@ -10,7 +10,11 @@
     <body>
         <div class='questions'>
             <h1>質問一覧</h1>
-                
+                @foreach($questions as $question)
+                    <div class='question'>
+                        <a href="/question/{{ $question->id }}">{{ $question->text }}</a>
+                    </div>
+                @endforeach
         </div>
     </body>
 </html>

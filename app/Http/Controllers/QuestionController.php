@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Question;
+use App\Models\University;
 
 class QuestionController extends Controller
 {
-    public function question()
+    public function question(University $university)
     {
-        return view('posts/question');
+        $question = Question::where('university_id' , '=' , $university->id)->get();
+        return view('posts/question')->with(['questions' => $question]);
     }
 }
