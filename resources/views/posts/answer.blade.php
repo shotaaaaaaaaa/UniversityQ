@@ -10,7 +10,11 @@
     <body>
         <div class='questions'>
             <h1>回答一覧</h1>
-                
+                @foreach($answers as $answer)
+                    <div class='answer'>
+                        <p>{{ $answer->text }}</p>
+                    </div>
+                @endforeach
         </div>
     </body>
 </html>

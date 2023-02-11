@@ -9,6 +9,6 @@ class CategoryController extends Controller
 {
     public function category(Category $category)
     {
-        return view('posts/category')->with(['categories' => $category]);
+        return view('posts/category')->with(['categories' => $category->get()]);
     }
 }
