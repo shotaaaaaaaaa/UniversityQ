@@ -10,6 +10,7 @@
     <body>
         <div class='questions'>
             <h1>質問一覧</h1>
+                <a href='/question/create/{{ $university->id }}'>質問を作成する</a>
                 @foreach($questions as $question)
                     <div class='question'>
                         <a href="/question/{{ $question->id }}">{{ $question->text }}</a>

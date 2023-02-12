@@ -14,4 +14,10 @@ class Answer extends Model
         return $this->belongTo(User::class);
         return $this->belongTo(Question::class);
     }
+    
+    protected $fillable = [
+        'user_id',
+        'question_id',
+        'text'
+    ];
 }

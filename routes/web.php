@@ -29,7 +29,11 @@ Route::get('/dashboard', function () {
 Route::get('/category', [CategoryController::class, 'category'])->name('category');
 Route::get('/category/{category}', [UniversityController::class, 'university']);
 Route::get('/university/{university}', [QuestionController::class, 'question']);
+Route::get('/question/create/{university}', [QuestionController::class, 'create']);
+Route::post('/university', [QuestionController::class, 'store']);
 Route::get('/question/{question}', [AnswerController::class, 'answer']);
+Route::get('/question/make/{question}', [AnswerController::class, 'make']);
+Route::post('question/{question}', [AnswerController::class, 'insert']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

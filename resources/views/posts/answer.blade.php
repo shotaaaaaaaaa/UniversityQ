@@ -10,6 +10,7 @@
     <body>
         <div class='questions'>
             <h1>回答一覧</h1>
+                <a href='/question/make/{{ $question->id }}'>回答する</a>
                 @foreach($answers as $answer)
                     <div class='answer'>
                         <p>{{ $answer->text }}</p>
