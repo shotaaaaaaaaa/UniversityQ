@@ -72,10 +72,6 @@ class Universityseeder extends Seeder
             'name' => '山梨大学',
             ]);
         DB::table('universities')->insert([
-            'category_id' => '1',
-            'name' => '山梨大学',
-            ]);
-        DB::table('universities')->insert([
             'category_id' => '2',
             'name' => '上智大学',
             ]);
