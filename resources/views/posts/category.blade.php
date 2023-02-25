@@ -11,14 +11,14 @@
         <title>Category</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link rel="stylesheet" href="public/styles.css" >
+        <link rel="stylesheet" href="{{ secure_asset('/css/category.css') }}" >
     </head>
     <body>
         <div class='categories'>
-            <h1>カテゴリー</h1>
+            <h1>大学分類</h1>
                 @foreach ($categories as $category)
                 <div class='category'>
-                    <a href="/category/{{ $category->id }}">{{ $category->name }}</a>
+                    <p><a href="/category/{{ $category->id }}" >{{ $category->name }}</a></p>
                 </div>
                 @endforeach
         </div>
