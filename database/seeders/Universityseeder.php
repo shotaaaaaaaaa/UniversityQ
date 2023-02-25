@@ -119,5 +119,9 @@ class Universityseeder extends Seeder
             'category_id' => '4',
             'name' => '京都産業大学',
             ]);
+        DB::table('universities')->insert([
+            'category_id' => '4',
+            'name' => '龍谷大学',
+            ]);
     }
 }
