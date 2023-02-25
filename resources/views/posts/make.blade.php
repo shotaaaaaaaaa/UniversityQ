@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <x-app-layout>
     <head>
         <meta charset="utf-8">
         <title>Make</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link rel="stylesheet" href="public/styles.css" >
+        <link rel="stylesheet" href="{{ secure_asset('/css/make.css') }}" >
     </head>
     <body>
         <div class='make'>
@@ -20,5 +21,9 @@
                     <input type="submit" value="作成">
                 </form>
         </div>
+        <div class="footer">
+            <p class='back'><a href="/question/{{ $question->id }}">戻る</a></p>
+        </div>
     </body>
+    </x-app-layout>
 </html>
