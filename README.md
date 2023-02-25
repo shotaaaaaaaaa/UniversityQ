@@ -14,21 +14,27 @@ PW:abcdefgh
 ## Features
 
 ・カテゴリー一覧
+
 ![category](https://user-images.githubusercontent.com/118661273/221378059-695e5137-5ac1-470f-9807-a83980bba965.png)
 
 ・大学一覧
+
 ![スクリーンショット 2023-02-26 051238](https://user-images.githubusercontent.com/118661273/221378035-0cc29038-9cff-4176-9341-c91cd7a0d23c.png)
 
 ・質問一覧
+
 ![スクリーンショット 2023-02-26 051256](https://user-images.githubusercontent.com/118661273/221378096-7aa12032-3e39-4e8f-b935-0191dbf228d2.png)
 
 ・回答一覧
+
 ![スクリーンショット 2023-02-26 051312](https://user-images.githubusercontent.com/118661273/221378141-5b56e397-31a3-4c4d-b558-d476606ea0ec.png)
 
 ・質問作成
+
 ![スクリーンショット 2023-02-26 051540](https://user-images.githubusercontent.com/118661273/221378176-7923f443-a981-410a-85d2-7103e702d2de.png)
 
 ・回答作成
+
 ![スクリーンショット 2023-02-26 051600](https://user-images.githubusercontent.com/118661273/221378197-fdeec748-aca6-4449-81c5-2d6fbb9c4985.png)
 
 ## Future Features
