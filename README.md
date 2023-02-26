@@ -53,24 +53,24 @@ PW:abcdefgh
 
 インストールと初期設定
 
-`git clone https://github.com/shotaaaaaaaaa/UniversityQ.git
-cd uniq
-composer install
-npm install
-npm run build
-cp .env.example .env
-php artisan key:generate`
+`git clone https://github.com/shotaaaaaaaaa/UniversityQ.git`
+`cd uniq`
+`composer install`
+`npm install`
+`npm run build`
+`cp .env.example .env`
+`php artisan key:generate`
 
 .envの中身を設定
 
-`DB_DATABASE={db_name}
-DB_USERNAME={db_username}
-DB_PASSWORD={db_password}`
+`DB_DATABASE={db_name}`
+`DB_USERNAME={db_username}`
+`DB_PASSWORD={db_password}`
 
 マイグレーションを実行して、サーバを起動
 
-`php artisan migrate:fresh --seed
-php artisan serve --port=8080`
+`php artisan migrate:fresh --seed`
+`php artisan serve --port=8080`
 
 ## Note
 
